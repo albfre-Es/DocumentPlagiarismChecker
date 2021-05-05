@@ -92,17 +92,24 @@ namespace DocumentPlagiarismChecker
         }               
 
         /// <summary>
-        /// Writes the gioven scores to the configured outputs.
+        /// Escribe las puntuaciones de gioven en las salidas configuradas.
         /// </summary>
         /// <param name="results">A set of file matching scores</param>
         public void WriteOutput(){
-            //TODO: must be selected by settings
+<<<<<<< HEAD
+            //TODO: debe ser seleccionado por la configuración
+            //TODO: must be selected by settingssssssss
             TerminalOutput t = new TerminalOutput(this.Settings);
             t.Write(this.MatchingResults);
+=======
+            //TODsdfsdfa<ZZZ
+            TerminalOutput t = new TerminalOutput(this.Settings);//dsfKEEE
+            t.Write(this.MatchingResults);//dfngidbfgubdfjhbdfghjbdfhjgb
+>>>>>>> a60b9b3d44d0f4337d7ea69f12c1e31b4aa2d9b9
         }
 
         /// <summary>
-        /// Gets all the available Comparators.
+        /// Obtiene todos los comparadores disponibles.
         /// </summary>
         /// <returns>A set of Comparator's object types</returns>
         private static IEnumerable<Type> GetComparatorTypes()
